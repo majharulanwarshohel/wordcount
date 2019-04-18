@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block page_content %}
+    <div>
+        <h1>My Django Application</h1>
+        <p>Name : {{name|lower}}</p>
+        <p>Country : {{country|upper}}</p>
+        {% for num in list %}
+        <h{{ num }}>Hell World!!!</h{{ num }}>
+        {% endfor %}
+    </div>
+{% endblock page_content %}
